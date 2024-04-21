@@ -11,7 +11,7 @@ $query = mysqli_query($conn, "INSERT INTO komentarfoto VALUES('','$fotoid','$use
 
 
 echo "<script>
-location.href=admin/index.php;
+location.href='admin/index.php';
 </script>";
 
 ?>

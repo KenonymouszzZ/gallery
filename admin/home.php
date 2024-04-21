@@ -38,13 +38,13 @@
 
 
 <div class="container mt-3">
-    Album :
+    
     <?php
     include "../koneksi.php";
     $userid=$_SESSION['userid'];
     $album = mysqli_query($conn, "SELECT * FROM album WHERE userid='$userid'");
     while($row = mysqli_fetch_array($album)){ ?>
-    <a href="home.php?albumid=<?php echo $row['albumid']?>" class="btn btn-outline-primary"> 
+    <a href="home.php?albumid=<?php echo $row['albumid']?>" class="btn btn-light"> 
     <?php echo $row['namaalbum']?></a>
 
 
